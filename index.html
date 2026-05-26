@@ -1,428 +1,486 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiesta Party Festa Atacado e Varejo</title>
+
+    <title>Maria do Carmo Carvalho da Silva | Artigos para Festas</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <style>
-
-        body{
+        body {
             font-family: Arial, sans-serif;
         }
 
-        .hero{
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-            url('https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1200') center;
+        .topo {
+            background: linear-gradient(rgba(0, 0, 0, 0.7),
+                    rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=1600');
             background-size: cover;
+            background-position: center;
             color: white;
-            padding: 120px 20px;
+            padding: 140px 20px;
             text-align: center;
         }
 
-        .hero h1{
-            font-size: 55px;
+        .topo h1 {
+            font-size: 60px;
             font-weight: bold;
         }
 
-        .hero p{
+        .topo p {
             font-size: 22px;
         }
 
-        .section-title{
-            font-weight: bold;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        .icon-box{
-            text-align: center;
-            padding: 30px;
-            border-radius: 10px;
-            transition: 0.3s;
-            background: #f8f9fa;
-        }
-
-        .icon-box:hover{
-            transform: translateY(-5px);
-            background: #ffe8e8;
-        }
-
-        .icon-box i{
-            font-size: 50px;
-            color: #dc3545;
-            margin-bottom: 20px;
-        }
-
-        .info-box{
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        footer{
-            background: #212529;
+        .btn-festa {
+            background: #ff4081;
             color: white;
-            padding: 30px;
-            text-align: center;
-        }
-
-        .btn-custom{
-            background: #dc3545;
-            color: white;
-            padding: 12px 25px;
             border-radius: 50px;
+            padding: 12px 30px;
+            border: none;
             text-decoration: none;
         }
 
-        .btn-custom:hover{
-            background: #bb2d3b;
+        .btn-festa:hover {
+            background: #e91e63;
             color: white;
         }
 
+        .titulo {
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        .card-servico {
+            padding: 30px;
+            border-radius: 15px;
+            transition: 0.3s;
+            background: #f8f9fa;
+            text-align: center;
+            height: 100%;
+        }
+
+        .card-servico:hover {
+            transform: translateY(-8px);
+            background: #ffe4ec;
+        }
+
+        .card-servico i {
+            font-size: 50px;
+            color: #ff4081;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .frase {
+            background: #ff4081;
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
     </style>
+
 </head>
+
 <body>
 
-<!-- MENU -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">
-            Fiesta Party
-        </a>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container">
 
-        <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre">Sobre</a>
-                </li>
+            <a class="navbar-brand fw-bold" href="#">
+                Festa & Eventos
+            </a>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#servicos">Serviços</a>
-                </li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#empresa">Empresa</a>
-                </li>
+            <div class="collapse navbar-collapse" id="menu">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#contato">Contato</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#empresa">Empresa</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
         </div>
-    </div>
-</nav>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="container">
-        <h1>Fiesta Party Festa</h1>
+    </nav>
+
+    <!-- TOPO -->
+    <section class="topo">
+
+        <div class="container">
+
+            <h1>Artigos para Festas</h1>
+
+            <p>
+                Tudo para transformar sua festa em um momento inesquecível.
+            </p>
+
+            <a href="#contato" class="btn btn-festa mt-3">
+                Solicitar Orçamento
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- SOBRE -->
+    <section class="py-5" id="sobre">
+
+        <div class="container">
+
+            <h2 class="titulo">
+                Sobre Nossa Empresa
+            </h2>
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1200"
+                        class="img-fluid rounded shadow">
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <p class="mt-4 mt-lg-0">
+                        A empresa Maria do Carmo Carvalho da Silva atua no segmento
+                        de artigos para festas oferecendo produtos modernos,
+                        criativos e de alta qualidade.
+                    </p>
+
+                    <p>
+                        Trabalhamos com atendimento para atacado e varejo,
+                        levando mais praticidade, beleza e diversão para
+                        aniversários, casamentos, eventos corporativos
+                        e comemorações especiais.
+                    </p>
+
+                    <p>
+                        Nosso compromisso é oferecer excelente atendimento,
+                        variedade de produtos e preços competitivos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="py-5 bg-light" id="servicos">
+
+        <div class="container">
+
+            <h2 class="titulo">
+                Nossos Diferenciais
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+
+                    <div class="card-servico shadow-sm">
+
+                        <i class="bi bi-balloon-heart"></i>
+
+                        <h4>Decorações</h4>
+
+                        <p>
+                            Produtos modernos para festas incríveis.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="card-servico shadow-sm">
+
+                        <i class="bi bi-gift"></i>
+
+                        <h4>Lembranças</h4>
+
+                        <p>
+                            Itens personalizados para todas as ocasiões.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="card-servico shadow-sm">
+
+                        <i class="bi bi-stars"></i>
+
+                        <h4>Qualidade</h4>
+
+                        <p>
+                            Produtos selecionados com ótimo acabamento.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="card-servico shadow-sm">
+
+                        <i class="bi bi-truck"></i>
+
+                        <h4>Atacado & Varejo</h4>
+
+                        <p>
+                            Atendimento completo para lojistas e consumidores.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FRASE -->
+    <section class="frase">
+
+        <div class="container">
+
+            <h2>
+                “Sua comemoração merece brilho, alegria e momentos inesquecíveis.”
+            </h2>
+
+        </div>
+
+    </section>
+
+    <!-- EMPRESA -->
+    <section class="py-5" id="empresa">
+
+        <div class="container">
+
+            <h2 class="titulo">
+                Informações Empresariais
+            </h2>
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="info-box shadow-sm">
+
+                        <h4>
+                            <i class="bi bi-building"></i>
+                            Dados da Empresa
+                        </h4>
+
+                        <hr>
+
+                        <p><strong>Razão Social:</strong> Maria do Carmo Carvalho da Silva</p>
+
+                        <p><strong>CPF:</strong> 613.036.853-45</p>
+
+                        <p><strong>Inscrição Estadual:</strong> 233.063.280.113</p>
+
+                        <p><strong>Natureza Jurídica:</strong> Sociedade Empresária Limitada</p>
+
+                        <p><strong>Data de Abertura:</strong> 25/10/2019</p>
+
+                        <p><strong>Capital Social:</strong> R$ 600.000,00</p>
+
+                        <p><strong>Situação:</strong> Ativa</p>
+
+                        <p><strong>Tipo:</strong> Matriz</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="info-box shadow-sm">
+
+                        <h4>
+                            <i class="bi bi-geo-alt"></i>
+                            Endereço
+                        </h4>
+
+                        <hr>
+
+                        <p>
+                            Rua David Marcassa Lopes, 771
+                        </p>
+
+                        <p>
+                            Bloco B - Bairro Pinhal
+                        </p>
+
+                        <p>
+                            Cabreúva - São Paulo
+                        </p>
+
+                        <p>
+                            CEP: 13317-234
+                        </p>
+
+                    </div>
+
+                    <div class="info-box shadow-sm">
+
+                        <h4>
+                            <i class="bi bi-telephone"></i>
+                            Contato
+                        </h4>
+
+                        <hr>
+
+                        <p>
+                            E-mail: di****@****.com.br
+                        </p>
+
+                        <p>
+                            Telefone: (11) 440****-****
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section class="py-5 bg-light" id="contato">
+
+        <div class="container">
+
+            <h2 class="titulo">
+                Entre em Contato
+            </h2>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    <form>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                <input type="text" class="form-control" placeholder="Seu Nome">
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <input type="email" class="form-control" placeholder="Seu E-mail">
+
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <input type="text" class="form-control" placeholder="Assunto">
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <textarea rows="5" class="form-control"
+                                placeholder="Digite sua mensagem"></textarea>
+
+                        </div>
+
+                        <button class="btn btn-festa w-100">
+                            Enviar Mensagem
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <h5>
+            Maria do Carmo Carvalho da Silva
+        </h5>
 
         <p>
-            Atacado e Varejo de Produtos para Festas
+            Artigos para Festas • Atacado e Varejo
         </p>
 
         <p>
-            Tudo para transformar sua comemoração em um momento inesquecível!
+            © 2026 Todos os direitos reservados.
         </p>
 
-        <a href="#contato" class="btn btn-custom mt-3">
-            Solicitar Orçamento
-        </a>
-    </div>
-</section>
+    </footer>
 
-<!-- SOBRE -->
-<section class="py-5" id="sobre">
-    <div class="container">
-
-        <h2 class="section-title">
-            Sobre Nossa Empresa
-        </h2>
-
-        <div class="row align-items-center">
-
-            <div class="col-lg-6">
-                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1200"
-                     class="img-fluid rounded shadow">
-            </div>
-
-            <div class="col-lg-6">
-
-                <p class="mt-4 mt-lg-0">
-                    A Fiesta Party é especializada na venda de produtos para festas,
-                    oferecendo qualidade, variedade e excelente atendimento para clientes
-                    de atacado e varejo.
-                </p>
-
-                <p>
-                    Trabalhamos com decoração, artigos temáticos, descartáveis,
-                    balões, lembrancinhas e muito mais.
-                </p>
-
-                <p>
-                    Nosso objetivo é ajudar você a criar festas incríveis,
-                    com produtos modernos e preços competitivos.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<!-- SERVIÇOS -->
-<section class="py-5 bg-light" id="servicos">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            Nossos Diferenciais
-        </h2>
-
-        <div class="row g-4">
-
-            <div class="col-md-4">
-                <div class="icon-box shadow-sm">
-
-                    <i class="bi bi-balloon-heart"></i>
-
-                    <h4>Decorações</h4>
-
-                    <p>
-                        Produtos modernos e criativos para festas de todos os estilos.
-                    </p>
-
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="icon-box shadow-sm">
-
-                    <i class="bi bi-gift"></i>
-
-                    <h4>Lembrancinhas</h4>
-
-                    <p>
-                        Grande variedade de itens para aniversários e eventos.
-                    </p>
-
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="icon-box shadow-sm">
-
-                    <i class="bi bi-truck"></i>
-
-                    <h4>Atacado e Varejo</h4>
-
-                    <p>
-                        Atendimento para lojistas e clientes finais com ótimos preços.
-                    </p>
-
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- EMPRESA -->
-<section class="py-5" id="empresa">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            Informações da Empresa
-        </h2>
-
-        <div class="row">
-
-            <div class="col-md-6">
-
-                <div class="info-box shadow-sm">
-
-                    <h5>
-                        <i class="bi bi-building"></i>
-                        Dados Empresariais
-                    </h5>
-
-                    <hr>
-
-                    <p><strong>Razão Social:</strong> Maria do Carmo Carvalho da Silva</p>
-
-                    <p><strong>Nome Fantasia:</strong> Fiesta Party Festa Atacado e Varejo</p>
-
-                    <p><strong>CNPJ/CPF:</strong> 613.036.853-45</p>
-
-                    <p><strong>Natureza Jurídica:</strong> Sociedade Empresária Limitada</p>
-
-                    <p><strong>Data de Abertura:</strong> 25/10/2019</p>
-
-                    <p><strong>Situação:</strong> Ativa</p>
-
-                    <p><strong>Capital Social:</strong> R$ 600.000,00</p>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-6">
-
-                <div class="info-box shadow-sm">
-
-                    <h5>
-                        <i class="bi bi-geo-alt"></i>
-                        Localização
-                    </h5>
-
-                    <hr>
-
-                    <p>
-                        Rua David Marcassa Lopes, 771
-                    </p>
-
-                    <p>
-                        Bloco B - Bairro Pinhal
-                    </p>
-
-                    <p>
-                        Cabreúva - SP
-                    </p>
-
-                    <p>
-                        CEP: 13317-234
-                    </p>
-
-                </div>
-
-                <div class="info-box shadow-sm">
-
-                    <h5>
-                        <i class="bi bi-envelope"></i>
-                        Contatos
-                    </h5>
-
-                    <hr>
-
-                    <p>
-                        E-mail: di****@****.com.br
-                    </p>
-
-                    <p>
-                        Telefone: (11) 440****-****
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- FRASE -->
-<section class="py-5 bg-danger text-white text-center">
-
-    <div class="container">
-
-        <h2>
-            "Transformando momentos especiais em festas inesquecíveis!"
-        </h2>
-
-    </div>
-
-</section>
-
-<!-- CONTATO -->
-<section class="py-5" id="contato">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            Entre em Contato
-        </h2>
-
-        <div class="row justify-content-center">
-
-            <div class="col-lg-8">
-
-                <form>
-
-                    <div class="row">
-
-                        <div class="col-md-6 mb-3">
-                            <input type="text"
-                                   class="form-control"
-                                   placeholder="Seu Nome">
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <input type="email"
-                                   class="form-control"
-                                   placeholder="Seu E-mail">
-                        </div>
-
-                    </div>
-
-                    <div class="mb-3">
-                        <input type="text"
-                               class="form-control"
-                               placeholder="Assunto">
-                    </div>
-
-                    <div class="mb-3">
-                        <textarea class="form-control"
-                                  rows="5"
-                                  placeholder="Digite sua mensagem"></textarea>
-                    </div>
-
-                    <button class="btn btn-danger w-100">
-                        Enviar Mensagem
-                    </button>
-
-                </form>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- RODAPÉ -->
-<footer>
-
-    <p>
-        © 2026 Fiesta Party Festa Atacado e Varejo - Todos os direitos reservados.
-    </p>
-
-    <p>
-        Desenvolvido com HTML, CSS e Bootstrap
-    </p>
-
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
